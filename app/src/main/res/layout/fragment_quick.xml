@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ui.quickaccess.QuickFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/qaHome"
+            style="@style/Widget.MaterialComponents.Button"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="82dp"
+            android:backgroundTint="#FCD66E"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:shadowColor="@color/design_default_color_on_secondary"
+            android:text="@string/qaHome"
+            android:textColor="@color/design_default_color_on_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/froces"
+            app:rippleColor="@color/design_default_color_background" />
+
+        <TextView
+            android:id="@+id/ode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/ode"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/froces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/Forces"
+            android:textColor="#0558B1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/ode"
+            app:layout_constraintStart_toEndOf="@+id/ode" />
+
+        <Button
+            android:id="@+id/qaContests"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#1b95d2"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:shadowColor="@color/design_default_color_on_secondary"
+            android:text="@string/contests"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qaHome"
+            app:rippleColor="@color/design_default_color_background" />
+
+        <Button
+            android:id="@+id/qaRating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="102dp"
+            android:backgroundTint="#C11C24"
+            android:elevation="10dp"
+            android:shadowColor="@color/design_default_color_on_secondary"
+            android:text="@string/rating"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qaContests"
+            app:rippleColor="@color/design_default_color_background" />
+
+        <Button
+            android:id="@+id/qaFriends"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="82dp"
+            android:backgroundTint="#FCD66E"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:shadowColor="@color/design_default_color_on_secondary"
+            android:text="@string/myFriends"
+            android:textColor="@color/design_default_color_on_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qaRating" />
+
+        <Button
+            android:id="@+id/qaSettings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#1b95d2"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:shadowColor="@color/design_default_color_on_secondary"
+            android:text="@string/chngSettings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qaFriends" />
+
+        <Button
+            android:id="@+id/qaBlogEntries"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="102dp"
+            android:backgroundTint="#C11C24"
+            android:elevation="10dp"
+            android:shadowColor="@color/design_default_color_on_secondary"
+            android:text="@string/blogentries"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qaSettings"
+            app:rippleColor="@color/design_default_color_background" />
+
+        <Button
+            android:id="@+id/aqcommentt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="82dp"
+            android:backgroundTint="#FCD66E"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:shadowColor="@color/design_default_color_on_secondary"
+            android:text="@string/comments"
+            android:textColor="@color/design_default_color_on_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qaBlogEntries" />
+
+        <Button
+            android:id="@+id/qaUserTalk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#1b95d2"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:shadowColor="@color/design_default_color_on_secondary"
+            android:text="@string/myTlks"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aqcommentt" />
+
+        <Button
+            android:id="@+id/qateams"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="102dp"
+            android:backgroundTint="#C11C24"
+            android:elevation="10dp"
+            android:shadowColor="@color/design_default_color_on_secondary"
+            android:text="@string/teams"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qaUserTalk"
+            app:rippleColor="@color/design_default_color_background" />
+
+        <Button
+            android:id="@+id/qaApi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="82dp"
+            android:backgroundTint="#FCD66E"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:shadowColor="@color/design_default_color_on_secondary"
+            android:text="@string/api"
+            android:textColor="@color/design_default_color_on_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qateams" />
+
+        <Button
+            android:id="@+id/qaCalender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#1b95d2"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:shadowColor="@color/design_default_color_on_secondary"
+            android:text="@string/calendar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qaApi" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

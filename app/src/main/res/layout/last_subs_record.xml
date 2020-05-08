@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inner_grad2"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/Sub_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/subId" />
+
+        <TextView
+            android:id="@+id/contestID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/constestID"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/Sub_Id"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/noteTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/design_default_color_secondary_variant"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/contestID"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@tools:sample/date/ddmmyy" />
+
+        <TextView
+            android:id="@+id/ProblemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Sub_Id"
+            tools:text="@string/ProblemName" />
+
+        <TextView
+            android:id="@+id/OKverdict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/greenDot"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProblemName"
+            tools:text="@string/verdict" />
+
+        <TextView
+            android:id="@+id/WAverdict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProblemName"
+            tools:text="@string/verdict" />
+
+        <TextView
+            android:id="@+id/ProgLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/design_default_color_primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/OKverdict"
+            tools:text="@string/ProgLang" />
+
+        <TextView
+            android:id="@+id/TimeConsumed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins_light"
+            app:layout_constraintBaseline_toBaselineOf="@+id/ProgLang"
+            app:layout_constraintEnd_toStartOf="@+id/MemConsumed"
+            tools:text="@string/TimeConsumed" />
+
+        <TextView
+            android:id="@+id/MemConsumed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            app:layout_constraintBaseline_toBaselineOf="@+id/TimeConsumed"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="@string/MemConsumed" />
+
+        <Button
+            android:id="@+id/viewButtonProb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/View"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TimeConsumed"
+            android:minWidth="8dp"
+            android:minHeight="0dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

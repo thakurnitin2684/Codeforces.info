@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/innergrad"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/P_record_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text=""
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/ContestName" />
+
+        <TextView
+            android:id="@+id/P_record_contest_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins_light"
+            android:textAlignment="viewEnd"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/P_record_name"
+            tools:text="@string/constestID" />
+
+        <TextView
+            android:id="@+id/P_ratingChange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/greenDot"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/P_labelRank"
+            app:layout_constraintTop_toBottomOf="@+id/P_record_contest_id"
+            tools:text="@string/registeredTime" />
+
+        <TextView
+            android:id="@+id/P_labelRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/StartingAt"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/P_record_contest_id" />
+
+        <TextView
+            android:id="@+id/P_oldRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/duration"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/P_ratingChange" />
+
+        <TextView
+            android:id="@+id/P_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/P_oldRating"
+            app:layout_constraintTop_toBottomOf="@+id/P_ratingChange"
+            tools:text="@string/registeredTime" />
+
+        <Button
+            android:id="@+id/P_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:fontFamily="sans-serif"
+            android:minWidth="8dp"
+            android:minHeight="0dp"
+            android:text="@string/View"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/P_ratingChange" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

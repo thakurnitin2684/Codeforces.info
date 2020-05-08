@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/home_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="4dp"
+            app:cardPreventCornerOverlap="false">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_gradient">
+
+
+                <ImageView
+                    android:id="@+id/home_avatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/round_rec"
+                    android:contentDescription="@string/ImageDescription"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:src="@drawable/avatar" />
+
+                <TextView
+                    android:id="@+id/home_handle"
+                    style="@style/Base.Widget.MaterialComponents.TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/Handle"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.2"
+                    app:layout_constraintStart_toEndOf="@+id/home_avatar"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/home_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/Name"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/home_handle"
+                    app:layout_constraintTop_toBottomOf="@+id/home_handle" />
+
+
+                <TextView
+                    android:id="@+id/home_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/Rating"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/greenDot" />
+
+                <TextView
+                    android:id="@+id/home_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/Rank"
+                    android:textSize="20sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/home_rating"
+                    app:layout_constraintStart_toEndOf="@+id/home_rating" />
+
+
+                <TextView
+                    android:id="@+id/home_maxRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/Rating"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/allTimeBest"
+                    app:layout_constraintStart_toEndOf="@+id/allTimeBest" />
+
+                <TextView
+                    android:id="@+id/home_maxRank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/MaxRank"
+                    android:textColor="@color/design_default_color_secondary_variant"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/home_maxRating"
+                    app:layout_constraintStart_toEndOf="@+id/home_maxRating" />
+
+                <TextView
+                    android:id="@+id/allTimeBest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/MaxRating"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/home_rating" />
+
+                <TextView
+                    android:id="@+id/lastOnline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/LastOnline"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/greenDot"
+                    app:layout_constraintStart_toEndOf="@+id/greenDot" />
+
+                <TextView
+                    android:id="@+id/greenDot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/dot"
+                    android:textColor="@color/greenDot"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/home_avatar" />
+
+                <TextView
+                    android:id="@+id/home_lastOnline"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/greenDot"
+                    android:textSize="16sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/lastOnline"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/lastOnline"
+                    tools:text="@tools:sample/date/ddmmyy" />
+
+                <Button
+                    android:id="@+id/viewButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:minWidth="8dp"
+                    android:minHeight="0dp"
+                    android:text="@string/View"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/home_maxRank" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!--    second card-->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="8dp"
+            android:paddingBottom="10dp"
+            app:cardCornerRadius="4dp"
+            app:cardPreventCornerOverlap="false">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/nav_gradient"
+                android:paddingBottom="10dp">
+
+
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/Country"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/home_country"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/country"
+                    app:layout_constraintTop_toBottomOf="@+id/country"
+                    tools:text="cntry" />
+
+                <TextView
+                    android:id="@+id/orgnztn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/Orgnztn"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/home_city"
+                    app:layout_constraintTop_toBottomOf="@+id/home_city" />
+
+                <TextView
+                    android:id="@+id/home_orgztn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/orgnztn"
+                    app:layout_constraintTop_toBottomOf="@+id/orgnztn"
+                    tools:text="Jaypee" />
+
+                <TextView
+                    android:id="@+id/friendOf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/FriendOf"
+                    app:layout_constraintStart_toStartOf="@+id/home_orgztn"
+                    app:layout_constraintTop_toBottomOf="@+id/home_orgztn" />
+
+                <TextView
+                    android:id="@+id/home_friendof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/friendOf"
+                    app:layout_constraintTop_toBottomOf="@+id/friendOf"
+                    tools:text="@string/Twousers" />
+
+                <TextView
+                    android:id="@+id/contribution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/Contri"
+                    app:layout_constraintStart_toStartOf="@+id/home_friendof"
+                    app:layout_constraintTop_toBottomOf="@+id/home_friendof" />
+
+                <TextView
+                    android:id="@+id/home_contribution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/contribution"
+                    app:layout_constraintTop_toBottomOf="@+id/contribution"
+                    tools:text="@string/contri" />
+
+                <TextView
+                    android:id="@+id/cityLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/CityLabrl"
+                    app:layout_constraintStart_toStartOf="@+id/home_country"
+                    app:layout_constraintTop_toBottomOf="@+id/home_country" />
+
+                <TextView
+                    android:id="@+id/home_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cityLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/cityLabel"
+                    tools:text="@string/City" />
+
+                <TextView
+                    android:id="@+id/registered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/registered"
+                    app:layout_constraintStart_toStartOf="@+id/home_contribution"
+                    app:layout_constraintTop_toBottomOf="@+id/home_contribution" />
+
+                <TextView
+                    android:id="@+id/labelParticipated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/registered"
+                    app:layout_constraintTop_toBottomOf="@+id/registered"
+                    tools:text="@string/registeredTime" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>
