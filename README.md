@@ -1,13 +1,37 @@
 # Codeforces.info
-An app which fetches data from Codeforces Api and helps you plan for upcoming constes or check your previous record or else.
+<img src="/ss/icon.png" align="left"
+width="160" hspace="10" vspace="10">
 
-[Download](https://play.google.com/store/apps/details?id=com.thakurnitin2684.codeforces) Codeforces.info from playstore.
+Android Applicaion you want to take a look at if you are a competitive coder on CodeForces.<br>
+Fetches data from Codeforces Api, Helps you plan for upcoming contests, with better UI and more handy than original website on mobile.
 
-##UI
+<p align="left">
+<a href="https://play.google.com/store/apps/details?id=com.thakurnitin2684.codeforces">
+    <img alt="Get it on Google Play"
+        height="80"
+        src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" />
+</a>  
+</p>
+
+
+## UI
 
 1      |  2 |3 |4 |5
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![Alt text](/ss/IMG_20200508_152147.jpg?raw=false "Optional Title")  | ![Alt text](/ss/IMG_20200508_152216.jpg?raw=false "Optional Title") |![Alt text](/ss/IMG_20200508_152246.jpg?raw=false "Optional Title") |![Alt text](/ss/IMG_20200508_152309.jpg?raw=false "Optional Title") |![Alt text](/ss/IMG_20200508_152323.jpg?raw=false "Optional Title")
+
+
+## Download
+
+[Download](https://play.google.com/store/apps/details?id=com.thakurnitin2684.codeforces) Codeforces.info from playstore.
+
+## Overview
+  Used in app:
+  - Written in Kotlin
+  - Used fragment for different pages on drawer
+  - Shared prefrences
+  - List view
+  - Dialogs
 
 ## License
 
