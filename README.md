@@ -2,8 +2,10 @@
 <img src="/ss/icon.png" align="left"
 width="160" hspace="10" vspace="10">
 
-Android Applicaion you want to take a look at if you are a competitive coder on CodeForces.<br>
-Fetches data from Codeforces Api, Helps you plan for upcoming contests, with better UI and more handy than original website on mobile.
+Android Applicaion you want to take a look at if you<br>
+are a competitive coder on CodeForces.Fetches data from<br>
+Codeforces Api, Helps you plan for upcoming contests,<br>
+with better UI and more handy than original website on mobile.
 
 <p align="left">
 <a href="https://play.google.com/store/apps/details?id=com.thakurnitin2684.codeforces">
