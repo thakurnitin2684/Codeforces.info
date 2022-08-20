@@ -29,7 +29,7 @@
     <string name="RemeberMeOff">remember me off</string>
     <string name="RemeberMeOn">remember me on</string>
     <string name="Login_rememberme">remember me</string>
-    <string name="internetError">Check your internet connection </string>
+    <string name="internetError">Check your internet connection  \n (or maybe Codeforces is down) </string>
     <string name="Country">country</string>
     <string name="Orgnztn">organization</string>
     <string name="FriendOf">friend of</string>
@@ -85,5 +85,6 @@
     <string name="calendar">CALENDAR</string>
     <string name="DesktopView">Desktop View</string>
     <string name="mobileView">Mobile View</string>
+    <string name="noUpcomingContest">No Upcoming Contest</string>
 
 </resources>

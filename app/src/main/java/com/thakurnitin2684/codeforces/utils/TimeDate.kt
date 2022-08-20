@@ -1,4 +1,4 @@
-package com.thakurnitin2684.codeforces
+package com.thakurnitin2684.codeforces.utils
 
 import java.text.SimpleDateFormat
 import java.util.*

@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="0dp"
-    tools:context=".ui.slideshow.SlideshowFragment">
+    tools:context=".ui.main.view.ParticipationFragment">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/nav_gradient">
+            android:background="@color/colorWhite">
 
 
             <TextView
@@ -40,8 +40,8 @@
                 app:layout_constraintStart_toStartOf="@+id/labelRecentSubs"
                 app:layout_constraintTop_toBottomOf="@+id/labelRecentSubs" />
 
-            <ListView
-                android:id="@+id/RecentSubListView"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recentSubListView"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginStart="16dp"

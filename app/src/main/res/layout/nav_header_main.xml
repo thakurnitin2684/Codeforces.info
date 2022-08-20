@@ -44,8 +44,8 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Switch
-        android:id="@+id/remeber-me"
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/remember_me"
         style="?attr/switchStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,6 +56,8 @@
         android:id="@+id/navBar_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:fontFamily="@font/poppins_light"
         android:textColor="@color/design_default_color_error" />
 

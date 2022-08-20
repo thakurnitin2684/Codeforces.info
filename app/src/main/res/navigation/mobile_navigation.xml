@@ -7,43 +7,42 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.thakurnitin2684.codeforces.ui.home.HomeFragment"
+        android:name="com.thakurnitin2684.codeforces.ui.main.view.HomeFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_home">
-
         <action
-            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-            app:destination="@id/nav_home_second" />
-    </fragment>
-    <fragment
-        android:id="@+id/nav_home_second"
-        android:name="com.thakurnitin2684.codeforces.ui.home.HomeSecondFragment"
-        android:label="@string/home_second"
-        tools:layout="@layout/fragment_home_second">
-        <action
-            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            android:id="@+id/action_nav_home_self"
             app:destination="@id/nav_home" />
-
-        <argument
-            android:name="myArg"
-            app:argType="string" />
     </fragment>
+
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.thakurnitin2684.codeforces.ui.gallery.GalleryFragment"
+        android:name="com.thakurnitin2684.codeforces.ui.main.view.ContestsFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.thakurnitin2684.codeforces.ui.slideshow.SlideshowFragment"
+        android:name="com.thakurnitin2684.codeforces.ui.main.view.ParticipationFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_quickaccess"
-        android:name="com.thakurnitin2684.codeforces.ui.quickaccess.QuickFragment"
+        android:name="com.thakurnitin2684.codeforces.ui.main.view.QuickAccessFragment"
         android:label="@string/quickaccess"
-        tools:layout="@layout/fragment_quick" />
+        tools:layout="@layout/fragment_quick" >
+        <action
+            android:id="@+id/action_nav_quickaccess_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 </navigation>

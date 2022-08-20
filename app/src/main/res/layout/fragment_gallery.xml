@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".ui.gallery.GalleryFragment" >
+    tools:context=".ui.main.view.ContestsFragment" >
  <LinearLayout
      android:layout_width="match_parent"
      android:layout_height="match_parent"
-     android:orientation="vertical">
+     android:orientation="vertical"
+     android:background="@color/colorGrey">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
@@ -18,8 +19,8 @@
         android:layout_margin="10dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:elevation="8dp"
-        app:cardCornerRadius="4dp"
+        android:elevation="16dp"
+        app:cardCornerRadius="10dp"
         app:cardPreventCornerOverlap="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +29,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/card_gradient">
+            android:background="@color/colorWhite">
 
 
             <TextView
@@ -45,8 +46,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ListView
-                android:id="@+id/UpcomingContestView"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/upcomingContestView"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginStart="8dp"
@@ -58,7 +59,10 @@
                 app:layout_constraintCircleRadius="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/labelUpcomingContest" />
+                app:layout_constraintTop_toBottomOf="@+id/labelUpcomingContest"
+                tools:listitem="@layout/list_record"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+              />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -73,9 +77,9 @@
          android:layout_margin="10dp"
          android:layout_marginStart="8dp"
          android:layout_marginEnd="8dp"
-         android:elevation="8dp"
+         android:elevation="16dp"
          android:paddingBottom="10dp"
-         app:cardCornerRadius="4dp"
+         app:cardCornerRadius="10dp"
          app:cardPreventCornerOverlap="false"
          app:layout_constraintEnd_toEndOf="parent"
          app:layout_constraintStart_toStartOf="parent"
@@ -84,7 +88,7 @@
          <androidx.constraintlayout.widget.ConstraintLayout
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:background="@drawable/nav_gradient"
+             android:background="@color/colorWhite"
              android:paddingBottom="10dp">
 
 
@@ -138,8 +142,8 @@
                  app:layout_constraintStart_toEndOf="@+id/NoOfContests"
                  app:layout_constraintTop_toBottomOf="@+id/labelParticipated" />
 
-             <ListView
-                 android:id="@+id/participatedContestView"
+             <androidx.recyclerview.widget.RecyclerView
+                 android:id="@+id/participatedContestRView"
                  android:layout_width="0dp"
                  android:layout_height="0dp"
                  android:layout_marginStart="16dp"
@@ -151,7 +155,8 @@
                  app:layout_constraintCircleRadius="4dp"
                  app:layout_constraintEnd_toEndOf="parent"
                  app:layout_constraintStart_toStartOf="parent"
-                 app:layout_constraintTop_toBottomOf="@+id/labelContestsGallaery" />
+                 app:layout_constraintTop_toBottomOf="@+id/labelContestsGallaery"
+                 />
 
          </androidx.constraintlayout.widget.ConstraintLayout>
      </com.google.android.material.card.MaterialCardView>
