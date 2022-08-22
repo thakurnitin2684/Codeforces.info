@@ -18,6 +18,13 @@ with better UI and more handy than original website on mobile.
 
 ## UI
 
+### Version 2.0
+1      |  2 |3 |4 |5
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![Alt text](/ss/1.png?raw=false "Optional Title")  | ![Alt text](/ss/2.png?raw=false "Optional Title") |![Alt text](/ss/3.png?raw=false "Optional Title") |![Alt text](/ss/4.png?raw=false "Optional Title") |![Alt text](/ss/5.png?raw=false "Optional Title")
+
+
+### Version 1.0
 1      |  2 |3 |4 |5
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![Alt text](/ss/IMG_20200508_152147.jpg?raw=false "Optional Title")  | ![Alt text](/ss/IMG_20200508_152216.jpg?raw=false "Optional Title") |![Alt text](/ss/IMG_20200508_152246.jpg?raw=false "Optional Title") |![Alt text](/ss/IMG_20200508_152309.jpg?raw=false "Optional Title") |![Alt text](/ss/IMG_20200508_152323.jpg?raw=false "Optional Title")
@@ -28,13 +35,16 @@ with better UI and more handy than original website on mobile.
 [Download](https://play.google.com/store/apps/details?id=com.thakurnitin2684.codeforces) Codeforces.info from playstore.
 
 ## Overview
-  Used in app:
-  - Written in Kotlin
-  - Used fragment for different pages on drawer
-  - Shared prefrences
-  - List view
-  - Dialogs
-
+ - MVVM : This project follows android recommmended MVVM architecture, having seperate layers for data, models ,and UI
+ - Hilt: uses hilt for dependency injection
+ - Retrofit 
+ - Shared Pref
+ - Kotlin
+ - Navigation Component
+ - Live Data
+ - Recylcler view 
+ - Dialogs
+ 
 ## License
 
 (see [LICENSE](LICENSE)).
