@@ -99,7 +99,8 @@ class HomeFragment : Fragment() {
             val dateString2= TimeDate.dateIs(userInfo.registrationTimeSeconds)
 
 
-        binding.homeHandle.text = baseContext.getMainHandle()
+
+        binding.homeHandle.text =  baseContext.getMainHandle()
         val name =  userInfo.firstName+" " + userInfo.lastName
         binding.homeName.text =name
         binding.homeRank.text = userInfo.rank

@@ -116,12 +116,12 @@ class MainActivity : AppCompatActivity() {
                 navHeaderBinding.navBarText.text = getString(R.string.nullWarning)
             } else {
 
-                Log.d("HHH","Clicked")
 
                 homeViewModel.fetchHomeInfo( baseContext.getMainHandle())
                 setupLoginObserver()
                 intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
+
             }
         }
 
@@ -151,10 +151,7 @@ class MainActivity : AppCompatActivity() {
                 Status.SUCCESS -> {
                     navHeaderBinding.navBarText.text = getString(R.string.invalidWarning)
                     it.data?.let { homeInfo ->
-                        Log.d("HHH","Success")
-
                         renderList(homeInfo)
-
                         navHeaderBinding.navBarText.visibility = View.GONE
                     }
                 }
@@ -168,6 +165,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
+
     private fun renderList(homeInfo: Home) {
         val status = homeInfo.status
 
@@ -177,7 +176,6 @@ class MainActivity : AppCompatActivity() {
 
             navHeaderBinding.headerHandle.hint=  baseContext.getMainHandle()
             navHeaderBinding.headerHandle.text.clear()
-
 
 //            To close the drawer
             activityMainBinding.drawerLayout.close()
