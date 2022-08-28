@@ -34,6 +34,10 @@ with better UI and more handy than original website on mobile.
 
 [Download](https://play.google.com/store/apps/details?id=com.thakurnitin2684.codeforces) Codeforces.info from playstore.
 
+## Structure
+
+<img src="/ss/structure.PNG" >
+
 ## Overview
  - MVVM : This project follows android recommmended MVVM architecture, having seperate layers for data, models ,and UI
  - Hilt: uses hilt for dependency injection
