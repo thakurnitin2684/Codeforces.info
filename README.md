@@ -35,6 +35,7 @@ with better UI and more handy than original website on mobile.
 [Download](https://play.google.com/store/apps/details?id=com.thakurnitin2684.codeforces) Codeforces.info from playstore.
 
 ## Structure
+ - <strong> MVVM with RETROFIT </strong>
 
 <img src="/ss/structure.PNG" >
 
